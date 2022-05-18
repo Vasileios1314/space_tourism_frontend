@@ -1,0 +1,9 @@
+body {
+  background-image: url(../../assets/home/background-home-desktop.jpg);
+  background-size: cover;
+}
+
+.explore {
+  background-color: aliceblue;
+  border-radius: 100%;
+}
