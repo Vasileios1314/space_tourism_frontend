@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import DestinationCard from "../../components/DestinationCard";
-import { fetchDestinationsById } from "../../store/destination/actions";
+import { setDestination } from "../../store/destination/actions";
 import { selectDestinations } from "../../store/destination/selectors";
 
 export default function Destination() {
@@ -9,7 +9,7 @@ export default function Destination() {
   const destination = useSelector(selectDestinations);
 
   useEffect(() => {
-    dispatch(fetchDestinationsById());
+    dispatch(setDestination());
     console.log("response", destination);
   }, [dispatch]);
 
@@ -17,12 +17,13 @@ export default function Destination() {
 
   return (
     <div>
-      {destination?.map((destination) => {
+      {destination.map((destination) => {
         return (
           <DestinationCard
             key={destination.id}
             id={destination.id}
             name={destination.name}
+            imgUrl={destination.imgUrl}
             description={destination.description}
             distance={destination.distance}
             travel={destination.travel}
