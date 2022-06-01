@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCrew } from "../../store/crew/actions";
@@ -28,6 +28,24 @@ export default function Crew() {
       >
         02 MEET YOUR CREW
       </h1>
+      <Button
+        variant="contained"
+        href="/technology"
+        sx={{
+          fontFamily: "monospace",
+          borderRadius: "100%",
+          padding: 10,
+          paddingRight: 10,
+          width: "30px",
+          height: "30px",
+          fontSize: "20px",
+          fontWeight: "180px",
+          background: "white",
+          color: "black",
+        }}
+      >
+        SPACEPORT & VENICLE!
+      </Button>
       <div>
         <Grid
           container
