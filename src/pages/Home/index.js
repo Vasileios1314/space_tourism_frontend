@@ -15,12 +15,15 @@ export default function Home() {
           marginLeft: "930px",
           marginTop: "-800px",
           paddingRight: "200px",
+          fontFamily: "monospace",
+          letterSpacing: ".1rem",
         }}
       >
         <Button
           variant="contained"
           href="/destination"
           sx={{
+            fontFamily: "monospace",
             borderRadius: "100%",
             padding: 30,
             paddingRight: 30,

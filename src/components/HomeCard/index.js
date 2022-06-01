@@ -28,13 +28,36 @@ export default function HomeCard() {
         >
           <CardActionArea>
             <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
+              <Typography
+                gutterBottom
+                variant="h4"
+                component="div"
+                style={{
+                  color: "white",
+                  fontFamily: "monospace",
+                  letterSpacing: ".1rem",
+                }}
+              >
                 So, you want to travel to
               </Typography>
-              <Typography gutterBottom variant="h1" component="div">
+              <Typography
+                gutterBottom
+                variant="h1"
+                component="div"
+                style={{
+                  color: "white",
+                  fontFamily: "monospace",
+                  letterSpacing: ".1rem",
+                }}
+              >
                 Space
               </Typography>
-              <Typography variant="h5" color="whitesmoke" letterSpacing=".2rem">
+              <Typography
+                variant="h5"
+                color="whitesmoke"
+                letterSpacing=".2rem"
+                fontFamily="monospace"
+              >
                 Let’s face it; if you want to go to space, you might as well
                 genuinely go to outer space and not hover kind of on the edge of
                 it. Well sit back, and relax because we’ll give you a truly out
