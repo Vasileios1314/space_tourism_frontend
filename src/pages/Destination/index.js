@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import DestinationCard from "../../components/DestinationCard";
@@ -32,6 +32,7 @@ export default function Destination() {
           container
           alignItems="center"
           style={{
+            alignItems: "center",
             marginLeft: 200,
             marginBottom: 40,
           }}
@@ -39,18 +40,16 @@ export default function Destination() {
         >
           {destination.map((destination) => {
             return (
-              <Grid item xs={2} sm={4} md={6}>
-                <item>
-                  <DestinationCard
-                    key={destination.id}
-                    id={destination.id}
-                    name={destination.name}
-                    imgUrl={destination.imgUrl}
-                    description={destination.description}
-                    distance={destination.distance}
-                    travel={destination.travel}
-                  />
-                </item>
+              <Grid item xs={2} sm={4} md={6} key={destination.id}>
+                <DestinationCard
+                  key={destination.id}
+                  id={destination.id}
+                  name={destination.name}
+                  imgUrl={destination.imgUrl}
+                  description={destination.description}
+                  distance={destination.distance}
+                  travel={destination.travel}
+                />
               </Grid>
             );
           })}
