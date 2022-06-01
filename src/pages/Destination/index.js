@@ -23,6 +23,7 @@ export default function Destination() {
           color: "white",
           fontFamily: "monospace",
           letterSpacing: ".5rem",
+          padding: "50px",
         }}
       >
         01 PICH YOUR DESTINATION

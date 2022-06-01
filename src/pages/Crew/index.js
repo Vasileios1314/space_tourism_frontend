@@ -23,6 +23,7 @@ export default function Crew() {
           color: "white",
           fontFamily: "monospace",
           letterSpacing: ".5rem",
+          padding: "50px",
         }}
       >
         02 MEET YOUR CREW
